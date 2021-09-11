@@ -1,0 +1,8 @@
+--- # Poggit-CI Manifest. Open the CI at https://poggit.pmmp.io/ci/ItsRealNise/SharedItems-Coor
+build-by-default: true
+branches:
+- main
+projects:
+  SharedItems-Coor:
+    path: ""
+...
