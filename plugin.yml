@@ -1,0 +1,7 @@
+name: SharedItemsAndCoords
+main: YaN\Main
+version: 1.0.0-beta
+api: 3.0.0
+author: YaN
+load: STARTUP
+description: Shared Item and coords
