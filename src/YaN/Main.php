@@ -34,9 +34,9 @@ class Main extends PluginBase implements Listener{
             return;
         }
         $e->setCancelled();
-        $x = round($p->getX());
-        $y = round($p->getY());
-        $z = round($p->getZ());
+        $x = intval(round($p->getX()));
+        $y = intval(round($p->getY()));
+        $z = intval(round($p->getZ()));
         foreach($this->getServer()->getOnlinePlayers() as $player){
             $player->sendMessage("§e{$p->getName()} player share coor in X: {$x} Y: {$y} Z: {$z}");
         }
