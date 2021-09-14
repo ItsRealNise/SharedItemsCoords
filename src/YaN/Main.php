@@ -15,30 +15,27 @@ class Main extends PluginBase implements Listener{
         $this->getServer()->getLogger()->notice("Plugin Enabled");
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
-    
     public function onChat(PlayerChatEvent $e){
-        $p = $e->getPlayer();
-        if($e->getMessage() != "[i]"){
-            return;
-        }
-        $e->setCancelled();
-        $i = $p->getInventory()->getItemInHand()->getName();
-        foreach($this->getServer()->getOnlinePlayers() as $player){
-            $player->sendMessage("§e{$p->getName()} player share item in hand {$i}");
-        }
+      $p = $e->getPlayer();
+      $msg = $e->getMessage();
+      if(preg_match("/[i]/i", $msg)){
+        $item = $p->getInventory()->getItemInHand()->getName();
+        $y = "Name : {$item}";
+        ms = str_replace("[i]", $y, $msg);
+        $e->setMessage($ms);
+      }
     }
     
     public function onTalk(PlayerChatEvent $e){
         $p = $e->getPlayer();
-        if($e->getMessage() != "[coor]"){
-            return;
-        }
-        $e->setCancelled();
-        $x = intval(round($p->getX()));
-        $y = intval(round($p->getY()));
-        $z = intval(round($p->getZ()));
-        foreach($this->getServer()->getOnlinePlayers() as $player){
-            $player->sendMessage("§e{$p->getName()} player share coor in X: {$x} Y: {$y} Z: {$z}");
+        $msg = $e->getMessage();
+        if(preg_match("/[coor]/i", $msg)){
+       	 $x = intval(round($p->getX()));
+        	$y = intval(round($p->getY()));
+        	$z = intval(round($p->getZ()));
+        	$coor = "X: " . $x . " Y: " . $y . " Z: " . $z;
+       	 $ms = str_replace("[coor]", $coor, $msg);
+       	 $e->setMessage($ms);
         }
     }
 }
