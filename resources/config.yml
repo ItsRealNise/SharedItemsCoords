@@ -1,1 +1,11 @@
-item-msg: "Your Item "
+# use {name} to player name
+# use {item} to item name
+
+item-msg: "Name: {item} "
+
+#use {name} to player name
+#use {x} to get player X
+#use {y} to get player Y
+#use {z} to get player Z
+
+coor-msg: "X: {x} Y: {y} Z: {z}"
