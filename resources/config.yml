@@ -9,3 +9,14 @@ item-msg: "Name: {item} "
 #use {z} to get player Z
 
 coor-msg: "X: {x} Y: {y} Z: {z}"
+
+#this is [i] message can be repace to item-msg
+#orginal is [i]
+
+item-msg: "[i]"
+
+
+#this is [coor] message can be replace to coor-msg
+#original is [coor]
+
+coor-msg: "[coor]
