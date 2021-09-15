@@ -25,8 +25,9 @@ class Main extends PluginBase implements Listener{
       $msg = $e->getMessage();
       if(preg_match("/[i]/i", $msg)){
         $item = $p->getInventory()->getItemInHand()->getName();
-        $y = $this->config->get("item-msg");
-        ms = str_replace("[i]", $y, $msg);
+        $cfg = $this->config->get("item-msg");
+        $cfg = str_replace(["{name}", "{item}"], [$p->getName(), $item], $cfg]);
+        ms = str_replace("[i]", $cfg, $msg);
         $e->setMessage($ms);
       }
     }
