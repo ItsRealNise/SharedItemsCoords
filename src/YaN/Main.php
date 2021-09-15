@@ -39,8 +39,10 @@ class Main extends PluginBase implements Listener{
        	 $x = intval(round($p->getX()));
         	$y = intval(round($p->getY()));
         	$z = intval(round($p->getZ()));
-        	$coor = "X: " . $x . " Y: " . $y . " Z: " . $z;
-       	 $ms = str_replace("[coor]", $coor, $msg);
+            $cfg = $this->config->get("coor-msg");
+            $cfg = str_replace(["{name}", "{x}", "{y}", "{z}"], [$p->getName(), $x, $y, $z], $cfg);
+
+       	 $ms = str_replace("[coor]", $cfg, $msg);
        	 $e->setMessage($ms);
         }
     }
