@@ -19,4 +19,4 @@ item-msg: "[i]"
 #this is [coor] message can be replace to coor-msg
 #original is [coor]
 
-coor-msg: "[coor]
+coor-msg: "[coor]"
