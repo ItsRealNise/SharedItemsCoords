@@ -27,7 +27,7 @@ class Main extends PluginBase implements Listener{
         $item = $p->getInventory()->getItemInHand()->getName();
         $cfg = $this->config->get("item-msg");
         $cfg = str_replace(["{name}", "{item}"], [$p->getName(), $item], $cfg);
-        ms = str_replace("[i]", $cfg, $msg);
+        $ms = str_replace("[i]", $cfg, $msg);
         $e->setMessage($ms);
       }
     }
