@@ -27,7 +27,8 @@ class Main extends PluginBase implements Listener{
         $item = $p->getInventory()->getItemInHand()->getName();
         $cfg = $this->config->get("item-msg");
         $cfg = str_replace(["{name}", "{item}"], [$p->getName(), $item], $cfg);
-        $ms = str_replace("[i]", $cfg, $msg);
+          $i = $this->config->get("item-chat");
+        $ms = str_replace($i $cfg, $msg);
         $e->setMessage($ms);
       }
     }
@@ -41,8 +42,8 @@ class Main extends PluginBase implements Listener{
         	$z = intval(round($p->getZ()));
             $cfg = $this->config->get("coor-msg");
             $cfg = str_replace(["{name}", "{x}", "{y}", "{z}"], [$p->getName(), $x, $y, $z], $cfg);
-
-       	 $ms = str_replace("[coor]", $cfg, $msg);
+            $c = $this->config->get("coor-chat");
+       	 $ms = str_replace($c, $cfg, $msg);
        	 $e->setMessage($ms);
         }
     }
