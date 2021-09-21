@@ -1,5 +1,5 @@
 name: SharedItems-Coords
-main: ItsRealNise\SharedItems-Coords\SharedItems-Coords
+main: ItsRealNise\SharedItems-Coords\Main
 version: 1.0.0
 api: 3.0.0
 author: ItsRealNise
