@@ -14,7 +14,7 @@ coor-msg: "X: {x} Y: {y} Z: {z}"
 #orginal is [i]
 # You can add Your custom
 
-item-msg: 
+item-prefix: 
  - "[i]"
 
 
@@ -22,5 +22,5 @@ item-msg:
 #original is [coor]
 # You can add Your Custom
 
-coor-msg: 
+coor-prefix: 
  - "[coor]"
