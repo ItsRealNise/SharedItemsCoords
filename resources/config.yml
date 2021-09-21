@@ -12,11 +12,15 @@ coor-msg: "X: {x} Y: {y} Z: {z}"
 
 #this is [i] message can be repace to item-msg
 #orginal is [i]
+# You can add Your custom
 
-item-msg: "[i]"
+item-msg: 
+ - "[i]"
 
 
 #this is [coor] message can be replace to coor-msg
 #original is [coor]
+# You can add Your Custom
 
-coor-msg: "[coor]"
+coor-msg: 
+ - "[coor]"
