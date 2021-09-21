@@ -9,7 +9,7 @@ use pocketmine\event\Listener;
 
 use pocketmine\event\player\PlayerChatEvent;
 
-class Main extends PluginBase implements Listener{
+class SharedItemsCoords extends PluginBase implements Listener{
     
     public function onEnable(): void{
         $this->saveDefaultConfig();
