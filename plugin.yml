@@ -1,7 +1,6 @@
-name: SharedItemsAndCoords
-main: YaN\Main
-version: 1.0.0-beta
+name: SharedItems-Coords
+main: ItsRealNise\SharedItems-Coords\Main
+version: 1.0.0
 api: 3.0.0
-author: YaN
-load: STARTUP
+author: ItsRealNise
 description: Shared Item and coords
