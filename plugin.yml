@@ -1,7 +1,6 @@
-name: SharedItemsAndCoords
-main: YaN\Main
-version: 1.0.0-beta
+name: SharedItems-Coords
+main: ItsRealNise\SharedItems-Coords\SharedItems-Coords
+version: 1.0.0
 api: 3.0.0
-author: YaN
-load: STARTUP
-description: Shared Item and coords
+author: ItsRealNise
+description: Now you can share your Coordinates and Item with Prefix

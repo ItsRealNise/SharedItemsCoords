@@ -1,3 +1,4 @@
+---
 # use {name} to player name
 # use {item} to item name
 
@@ -12,11 +13,16 @@ coor-msg: "X: {x} Y: {y} Z: {z}"
 
 #this is [i] message can be repace to item-msg
 #orginal is [i]
+# You can add Your custom
 
-item-msg: "[i]"
+item-prefix: 
+ - "[i]"
 
 
 #this is [coor] message can be replace to coor-msg
 #original is [coor]
+# You can add Your Custom
 
-coor-msg: "[coor]"
+coor-prefix: 
+ - "[coor]"
+...
