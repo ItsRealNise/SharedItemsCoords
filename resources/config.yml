@@ -1,3 +1,4 @@
+---
 # use {name} to player name
 # use {item} to item name
 
@@ -24,3 +25,4 @@ item-prefix:
 
 coor-prefix: 
  - "[coor]"
+...
