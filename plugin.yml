@@ -1,6 +1,6 @@
 name: SharedItems-Coords
-main: ItsRealNise\SharedItems-Coords\Main
+main: ItsRealNise\SharedItems-Coords\SharedItems-Coords
 version: 1.0.0
 api: 3.0.0
 author: ItsRealNise
-description: Shared Item and coords
+description: Now you can share your Coordinates and Item with Prefix
