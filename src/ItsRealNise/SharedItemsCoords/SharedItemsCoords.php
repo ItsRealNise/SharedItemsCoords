@@ -18,7 +18,7 @@ class SharedItemsCoords extends PluginBase implements Listener{
 
     public function onChat(PlayerChatEvent $event){
       if($event->isCancelled()) return;
-      $playerlayer = $event->getPlayer();
+      $player = $event->getPlayer();
       $message = $event->getMessage();
       foreach($this->getConfig()->get("item-prefix") as $itemMsg){
       	if(preg_match("/" . $itemMsg . "/i", $message)){
@@ -33,7 +33,7 @@ class SharedItemsCoords extends PluginBase implements Listener{
         		$y = intval(round($player->getY()));
         		$z = intval(round($player->getZ()));
        		 $formated = str_replace($coorMsg, str_replace(["{name}", "{x}", "{y}", "{z}"], [$player->getName(), $x, $y, $z], $this->getConfig()->get("coor-msg")), $message);
-       		 $e->setMessage($formated);
+       		 $event->setMessage($formated);
       	  }
         }
     }
